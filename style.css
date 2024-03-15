@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    background-size: cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+}
+
+@keyframes slidein {
+    from {
+        background-position: top;
+        background-size: 3000px;
+    }
+
+    to {
+        background-position: -100px 0px;
+        background-size: 2750px;
+    }
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.text-section {
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px) saturate(159%);
+    -webkit-backdrop-filter: blur(1px) saturate(159%);
+    background-color: rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    margin-left: 500px;
+    margin-top: -200px;
+    border-radius: 20px;
+}
+
+
+
+.form-section {
+    height: 40%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    margin-left: -1300px;
+    backdrop-filter: blur(20px) saturate(159%);
+    -webkit-backdrop-filter: blur(1px) saturate(159%);
+    background-color: rgba(255, 255, 255, 0.18);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    border-radius: 20px;
+    margin-top: -200px;
+
+}
+
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #7e97b8;
+    background-color: #e0e8ef;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+}
+
+button:hover {
+    color: #516d91;
+    background-color: #E5EDF5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+input {
+    height: 40px;
+    width: 200%;
+    border: none;
+    background-color: gray;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+    margin-left: -50px;
+}
+
+.input:focus {
+    background-color: white;
+    transform: scale(1.05);
+    box-shadow: 13px 13px 100px #969696,
+        -13px -13px 100px #ffffff;
+}
+
+::placeholder {
+    color: #354f70;
+}
+
+h1 {
+    width: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -800px;
+    color: #354f70;
+    background-color: #e0e8ef;
+    font-size: 35px;
+    backdrop-filter: blur(1px) saturate(103%);
+    -webkit-backdrop-filter: blur(8px) saturate(103%);
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    position: absolute;
+    position: absolute;
+    top: -100px;
+}
+
+h2 {
+    color: #354f70;
+    /* background-color: #e0e8ef; */
+    font-size: 30px;
+    margin-top: -10px;
+    margin-left: 20px;
+
+}
+
+.icon{
+    position: absolute;
+    top: 30px;
+    left: 200px;
+    color: #355a8a;
+}
+
+.icon i{
+    font-size: 28px;
+    color: #354f70;
+}
+
+p {
+    color: #354f70;
+    margin-top: -12px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 170px;
+    left: 270px;
+
+    
+}
+
+.icons-temp {
+    font-size: 35px;
+    margin-left: -250px;
+    position: absolute;
+    top: 80px;
+    left: 450px;
+    color: #354f70;
+}
+
+.image {
+    position: absolute;
+    top: 130px;
+    left: 165px;
+    color: #354f70;
+    
+}
+
+
+.head{
+    margin-top: -100px;
+    position: absolute;
+    font-size: 28px;
+    color: #354f70;
+    top: 125px;
+    left: 260px;
+}
+
+
+
+.content{
+    height: 250px;
+    background-color: black;
+    margin-top: 350px;
+    width: 40%;
+    margin-left: -200px;
+    backdrop-filter: blur(1px) saturate(103%);
+    -webkit-backdrop-filter: blur(1px) saturate(103%);
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.content h6{
+    font-size: 30px;
+    color: #354f70;
+    font-weight: bolder;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    margin-left: -350px;
+}
+
+.content i{
+    font-size: 32px;
+    margin-left: -420px;
+    position: absolute;
+    top: 40px;
+    left: 450px;
+    color: #354f70;
+
+}
+
+.content p{
+    margin-top: -60px;
+    font-size: 30px;
+    margin-left: -180px;
+    color: #354f70;
+   
+
+}
+
+
+
+.content h5{
+    margin-top: 80px;
+    font-size: 15px;
+    color: #354f70;
+}
+
+.content h5 i{
+    margin-top: 150px;
+    color: #354f70;
+  
+}
+
+
+.content .s i{
+    margin-top: 70px;
+    height: 40px;
+    color: #354f70;
+   
+}
+
+.content .s-2 i{
+    position: absolute;
+    margin-left: -420px;
+    top: 110px;
+    color: #354f70;
+}
